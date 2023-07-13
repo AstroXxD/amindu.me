@@ -20,12 +20,41 @@ body {
     color: var(--primarycolor) !important;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 162, 237, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+.navbar .toggle-btn {
+    font-size: 20px;
+    color: var(--primarycolor);
+    cursor: pointer;
+    display: none;
 }
 
-.navbar-toggler {
-    border: 1px solid #00a2ed !important;
+.toggle-dropdown {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    height: 0px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toggle-dropdown.open-toggle {
+    height: 200px;
+}
+
+.toggle-dropdown li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-dropdown li a:hover {
+    color: var(--primarycolor);
 }
 
 .herotext {
@@ -36,8 +65,8 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .herotext h1 {
@@ -48,18 +77,48 @@ body {
 .hellotext {
     font-size: 50px;
     margin-bottom: -5px;
+    /* padding-top: 200px; */
 }
 
 .wrapper {
     font-size: 25px;
-    font-style: italic;
     font-weight: 500;
 }
 
 .multitext {
     color: var(--primarycolor);
     text-transform: capitalize;
+    font-style: italic;
 }
+
+.herotext .social-icon i {
+    font-size: 30px;
+    padding: 0 10px;
+    margin-top: 50px;
+}
+
+.herotext .social-icon a{
+    color: white;
+}
+
+.herotext .social-icon a:hover {
+    color: var(--primarycolor) !important;
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        display: none !important;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .toggle-dropdown {
+        display: block;
+    }
+}
+
 
 @media (max-width: 810px) {
     .herotext h1 {
@@ -72,6 +131,10 @@ body {
     
     .wrapper {
         font-size: 20px;
+    }
+
+    .herotext .social-icon i {
+        font-size: 25px;
     }
 }
 
@@ -87,6 +150,10 @@ body {
     .wrapper {
         font-size: 20px;
     }
+
+    .herotext .social-icon i {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -99,6 +166,10 @@ body {
     }
     
     .wrapper {
+        font-size: 20px;
+    }
+
+    .herotext .social-icon i {
         font-size: 20px;
     }
 }

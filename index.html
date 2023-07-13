@@ -6,7 +6,7 @@
 
     <title>Amindu Sangeeth</title>
     <meta name="description" content="Welcome to the personal website of Amindu Sangeeth. Explore my portfolio, Projects, and contact information.">
-    <meta name="keywords" content="Amindu Sangeeth, Amindu, Sangeeth, Astro, AstroX, Amindu website, Amindu Sangeeth resume">
+    <meta name="keywords" content="Amindu Sangeeth, Amindu, Sangeeth, Astro, AstroX, Amindu website, Amindu Sangeeth resume, amindu sangeeth">
     <meta name="author" content="Amindu Sangeeth">
     <!-- Open Graph meta tags for social media sharing -->
     <meta property="og:title" content="Amindu Sangeeth - Personal Website">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
 
     <!--Favicon-->
-    <link rel="icon" href="assets/images/proimg.jpg">
+    <link rel="icon" href="assets/images/astrox logo png.png">
 
     <!--CSS Linked-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -29,19 +29,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!-------------------Header Section------------------->
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
                 <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -53,20 +52,49 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-              </div>
+                <div class="toggle-btn ms-auto">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!--Nav toggle-->
+            <div class="toggle-dropdown">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
             </div>
           </nav>
     </header>
     <!-------------------Header Section End------------------->
 
     <!-------------------Hero Section------------------->
-    <section id="hero">
-        <div class="herotext">
-            <p class="hellotext">Hello I'm</p>
-            <h1>Amindu Sangeeth</h1>
-            <p class="wrapper">a <span class="multitext"></span></p>
-        </div>
-    </section>
+    <main>
+      <section id="hero">
+          <div class="herotext">
+              <p class="hellotext">Hello I'm</p>
+              <h1>Amindu Sangeeth</h1>
+              <p class="wrapper">a <span class="multitext"></span></p>
+              <div class="social-icon">
+                <a href="https://github.com/AstroXxD" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amindu-sangeeth-ab3910202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/amindu.sangeeth/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCg45gFG8dP8ibAMkrtMWUzQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="http://tiktok.com/@astro.boy.gg" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://twitter.com/aminduuu" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/aminduuu/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+          </div>
+      </section>
+    </main>
 
     <!-------------------Hero Section End------------------->
 
@@ -78,12 +106,25 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('.multitext', {
-      strings: ['fontend developer', 'Web Developer', 'Designer', 'FiveM Developer', 'Graphic Designer'],
+      strings: ['fontend developer', 'Web Developer', 'FiveM Developer', 'Graphic Designer'],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
       startDelay: 1000,
     });
+
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.toggle-dropdown')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open-toggle')
+      const isOpen = dropDownMenu.classList.contains('open-toggle')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    };
     </script> 
 </body>
 </html>
