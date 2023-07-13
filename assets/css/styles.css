@@ -90,7 +90,7 @@ body {
 
 .herotext {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background: url(../images/heroimg.png);
     background-size: cover;
     background-position: center;
@@ -137,6 +137,32 @@ body {
 }
 
 
+/*_______________________ About Section_______________________ */
+
+#about {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abouttext h1 {
+    color: var(--primarycolor);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 50px 0;
+}
+
+.abouttext p {
+    max-width: 1000px;
+    text-align: justify;
+}
 
 
 /*_______________________ Responsive Section_______________________ */
