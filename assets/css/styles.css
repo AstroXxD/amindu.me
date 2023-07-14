@@ -102,7 +102,7 @@ body {
 
 .herotext h1 {
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 650;
 }
 
 .hellotext {
@@ -160,9 +160,85 @@ body {
 }
 
 .abouttext p {
-    max-width: 1000px;
+    /* max-width: 1100px; */
     text-align: justify;
 }
+
+.skillbars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 50px 0 20px 0;
+}
+
+.skills {
+    width: 500px;
+}
+
+.skills h2 {
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 14px;
+    background-color: #aaaaaa;
+    border-radius: 5px;
+}
+
+.skill-per {
+    height: 14px;
+    background: linear-gradient(90deg, #78d4ff, #00aeff);
+    border-radius: 5px;
+    position: relative;
+    animation: fillbar 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: var(--primarycolor);
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--primarycolor);
+    top: -13px;
+    right: 0;
+    transform: translateX(50%) rotate(-45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillbar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 
 
 /*_______________________ Responsive Section_______________________ */
@@ -178,6 +254,14 @@ body {
 
     .toggle-dropdown {
         display: block;
+    }
+
+    .skillbars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
     }
 }
 
@@ -198,6 +282,10 @@ body {
     .herotext .social-icon i {
         font-size: 25px;
     }
+
+    .abouttext p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -216,9 +304,33 @@ body {
     .herotext .social-icon i {
         font-size: 22px;
     }
+
+    .abouttext p {
+        font-size: 15px;
+        max-width: 450px;
+    }
+
+    .skills {
+        width: 400px;
+    }
+
+    .skill-bar {
+        height: 13px;
+    }
+    
+    .skill-per {
+        height: 13px;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .abouttext p {
+        font-size: 14px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 412px) {
     .herotext h1 {
         font-size: 35px;
     }
@@ -233,5 +345,30 @@ body {
 
     .herotext .social-icon i {
         font-size: 20px;
+    }
+
+    .abouttext p {
+        font-size: 13px;
+        max-width: 350px;
+    }
+
+    .skills {
+        width: 300px;
+    }
+
+    .skills h2 {
+        font-size: 20px;
+    }
+
+    .skill-name {
+        font-size: 13px;
+    }
+    
+    .skill-bar {
+        height: 12px;
+    }
+    
+    .skill-per {
+        height: 12px;
     }
 }
