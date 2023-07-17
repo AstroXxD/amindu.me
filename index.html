@@ -24,6 +24,9 @@
   <!--Bootstrap Linked-->
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!--Owl-->
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,42 +187,85 @@
   <section id="projects">
     <div class="projects">
       <h1>Projects</h1>
-      
+        <div class="wrapper-2">
+          <div class="carousel owl-carousel">
+            <a href="" target="_blank">
+             <div class="card">
+              <img class="project-img" src="assets/images/dukesland.png" alt="Dukes Land Image">
+              <div class="project-text">
+                <h3 class="project-title">Duke's Land Roleplay</h3>
+                <p class="project-desc">It is a roleplay server created by applying FiveM's qbcore framework based on GTA V game. Visit here for more details.</p>
+              </div>
+             </div>
+            </a>
+
+            <a href="" target="_blank">
+             <div class="card">
+              <img class="project-img" src="assets/images/errp.png" alt="Dukes Land Image">
+              <div class="project-text">
+                <h3 class="project-title">Escape Reality Roleplay</h3>
+                <p class="project-desc">It is a roleplay server created by applying FiveM's qbcore framework based on GTA V game. Visit here for more details.</p>
+              </div>
+             </div>
+            </a>
+            
+            <a href="https://www.behance.net/amindusangeeth" target="_blank">
+             <div class="card">
+              <img class="project-img" src="assets/images/behance.png" alt="Dukes Land Image">
+              <div class="project-text">
+                <h3 class="project-title">Graphics and Prototypes</h3>
+                <p class="project-desc">Graphics design and user interfaces created by me can be seen here. Visit here for more details.</p>
+              </div>
+             </div>
+            </a>
+          </div>
+       </div>
     </div>
   </section>
   <!-------------------Projects Section End------------------->
 
-  <!--Bootstrap Linked-->
+  <!-------------------Services Section ------------------->
+  <section id="services">
+    <div class="services">
+      <h1>Services</h1>
+      <h3>What Can I Do for You?</h3>
+      <div class="wrapper-2">
+        <div class="carousel-2 owl-carousel">
+          <div class="service">
+            <i class="fa-sharp fa-solid fa-earth-americas"></i>
+            <h3 class="service-title">Web Development</h3>
+          </div>
+
+          <div class="service">
+            <i class="fa-solid fa-code"></i>
+            <h3 class="service-title">FiveM Development</h3>
+          </div>
+
+          <div class="service">
+            <i class="fa-regular fa-window-restore"></i>
+            <h3 class="service-title">UI Design</h3>
+          </div>
+
+          <div class="service">
+            <i class="fa-regular fa-object-group"></i>
+            <h3 class="service-title">Graphics Design</h3>
+          </div>
+        </div>
+     </div>
+    </div>
+  </section>
+
+  <!-------------------Services Section End ------------------->
+
+
+
+
+
+  <!--js Linked-->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="assets/bootstrap/js/bootstrap.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('.multitext', {
-      strings: ['Web Developer', 'FiveM Developer', 'Web Designer', 'Graphic Designer'],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      startDelay: 1000,
-    });
-
-    //navtoggle
-    const toggleBtn = document.querySelector('.toggle-btn')
-    const toggleBtnIcon = document.querySelector('.toggle-btn i')
-    const dropDownMenu = document.querySelector('.toggle-dropdown')
-
-    toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open-toggle')
-      const isOpen = dropDownMenu.classList.contains('open-toggle')
-
-      toggleBtnIcon.classList = isOpen
-      ? 'fa-solid fa-xmark'
-      : 'fa-solid fa-bars'
-    };
-
-    //preloader
-    const preloaderWrapper = document.querySelector('.preloader-wrapper')
-    window.addEventListener('load', function(){
-      preloaderWrapper.classList.add('fade-out-animation');
-    });
-  </script> 
+  <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script> 
 </body>
 </html>
