@@ -429,7 +429,7 @@ body {
 
 #contact {
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #313131;
 }
 
 .contact {
@@ -450,8 +450,8 @@ body {
 } */
 
 .contact h3 {
-    padding: 80px 0 80px;
-    font-size: 30px;
+    padding: 80px 0 50px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -461,12 +461,12 @@ body {
 
 .contacts .email i {
     font-size: 100px;
-    color: #00aeff;
+    color: var(--primarycolor);
     padding-bottom: 40px;
 }
 
 .email p {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 450;
 }
 .email {
@@ -478,12 +478,12 @@ body {
 }
 
 .social-media p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .social-media i {
-    font-size: 30px;
+    font-size: 28px;
     padding: 20px 10px;
 }
 
@@ -492,7 +492,7 @@ body {
 }
 
 .contact-ions a:hover {
-    color: #00aeff;
+    color: var(--primarycolor);
 }
 
 /*_______________________ Footer Section_______________________ */
@@ -515,6 +515,7 @@ footer {
 
 .footer p a {
     text-decoration: none;
+    color: var(--primarycolor);
 }
 
 .fp1 {
@@ -663,7 +664,7 @@ footer {
     }
 
     .contact h3 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .contacts .email i {
@@ -671,15 +672,15 @@ footer {
     }
 
     .email p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .social-media p {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .social-media i {
-        font-size: 25px;
+        font-size: 20px;
     }
     
 
@@ -712,19 +713,25 @@ footer {
     }
 
     .skills h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .skill-name {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .skill-bar {
-        height: 12px;
+        height: 10px;
     }
     
     .skill-per {
-        height: 12px;
+        height: 10px;
+    }
+
+    .skill-per::before {
+        font-size: 9px;
+        top: -29px;
+        
     }
 
     .owl-dot {
@@ -738,7 +745,7 @@ footer {
     }
 
     .services h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .service h3 {
@@ -755,7 +762,27 @@ footer {
     }
 
     .abouttext p {
-        font-size: 11px;
+        font-size: 12px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    .contacts .email i {
+        font-size: 60px;
+    }
+
+    .email p {
+        font-size: 14px;
+    }
+
+    .social-media p {
+        font-size: 18px;
+    }
+
+    .projects h1, .services h1, .abouttext h1 {
+        font-size: 21px;
     }
     
 }
