@@ -538,7 +538,8 @@ footer {
     }
 
     .navbar-scrolled {
-        display: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
     }
 
     .navbar .toggle-btn {
