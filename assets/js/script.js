@@ -51,7 +51,7 @@ $(".carousel").owlCarousel({
 
 //Services slider
 $(".carousel-2").owlCarousel({
-    margin: 0,
+    margin: 60,
     loop: false,
     autoplay: false,
     autoplayTimeout: 2000,
@@ -61,8 +61,12 @@ $(".carousel-2").owlCarousel({
             items:1,
             nav: false,
         },
-        800:{
+        500:{
             items:2,
+            nav: false
+        },
+        800:{
+            items:3,
             nav: false
         },
         1200:{

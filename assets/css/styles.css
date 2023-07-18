@@ -1,5 +1,5 @@
 :root {
-    --primarycolor: #00a2ed;
+    --primarycolor: #00aeff;
 }
 
 * {
@@ -144,8 +144,8 @@ body {
 /*_______________________ About Section_______________________ */
 
 #about {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 100%;
     padding-bottom: 100px;
 }
@@ -157,15 +157,17 @@ body {
 }
 
 .abouttext h1 {
-    color: var(--primarycolor);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    font-size: 30px;
     padding: 50px 0;
 }
 
+.abouttext h1 span {
+    font-weight: 300;
+}
+
 .abouttext p {
-    /* max-width: 1100px; */
+    max-width: 1200px;
     text-align: justify;
 }
 
@@ -198,7 +200,7 @@ body {
 
 .skill-bar {
     height: 14px;
-    background-color: #dfdfdf;
+    background-color: #555555;
     border-radius: 5px;
 }
 
@@ -248,7 +250,8 @@ body {
 
 #projects {
     width: 100%;
-    background-color: rgb(247, 247, 247);
+    color: white;
+    background-color: #000000;
     padding-bottom: 100px;
 }
 
@@ -268,11 +271,19 @@ body {
 }
 
 .projects h1 {
-    color: var(--primarycolor);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 50px 0;
+    font-size: 30px;
+    padding: 50px 0 0;
+}
+
+.projects h1 span {
+    font-weight: 300;
+}
+
+.projects .subtitle {
+    padding: 20px 0 80px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .wrapper-2 {
@@ -294,15 +305,17 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
+    padding: 30px 0 0;
 }
 
 .carousel .card {
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #1d1d1d;
     text-align: center;
     margin: 20px 0;
     font-size: 13px;
-    border-radius: 20px;
+    height: 380px;
+    border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 
@@ -330,23 +343,25 @@ body {
 /*_______________________ Services Section_______________________ */
 
 #services {
-    color: black;
-    background-color: #f0f0f0;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
 }
 
 .services {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .services h1 {
-    color: var(--primarycolor);
     font-weight: 700;
     font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 50px 0 0;
+    padding-top: 50px;
+}
+
+.services h1 span {
+    font-weight: 300;
 }
 
 .services h3 {
@@ -365,9 +380,19 @@ body {
 }
 
 .service h3 {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-weight: 650;
+    font-weight: 620;
+}
+
+.carousel-2 .service {
+    color: #ffffff;
+    background-color: #1d1d1d;
+    text-align: center;
+    padding-top: 50px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 
 .carousel-2 {
@@ -471,6 +496,22 @@ body {
     .skill-per {
         height: 13px;
     }
+
+    .services h3 {
+        font-size: 22px;
+    }
+
+    .service h3 {
+        font-size: 18px;
+    }
+
+    .projects .subtitle {
+        font-size: 22px;
+    }
+
+    .projects h1, .services h1, .abouttext h1 {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -539,11 +580,15 @@ body {
     }
 
     .services h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .service h3 {
         font-size: 18px;
+    }
+
+    .projects .subtitle {
+        font-size: 20px;
     }
 
     .carousel-2 .owl-dot {
