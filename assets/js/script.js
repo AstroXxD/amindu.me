@@ -1,3 +1,22 @@
+//preloader
+const preloaderWrapper = document.querySelector('.preloader-wrapper')
+window.addEventListener('load', function(){
+    preloaderWrapper.classList.add('fade-out-animation');
+});
+
+//Navbar
+const navEl = document.querySelector('.navbar')
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+        navEl.classList.add('navbar-scrolled')
+    }
+    else if (window.scrollY < 56) {
+        navEl.classList.remove('navbar-scrolled')
+    }
+});
+
+
+// Hero text
 var typed = new Typed('.multitext', {
 strings: ['Front-End Developer', 'FiveM Developer', 'Web Designer', 'Graphic Designer'],
 loop: true,
@@ -19,12 +38,6 @@ toggleBtnIcon.classList = isOpen
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 };
-
-//preloader
-const preloaderWrapper = document.querySelector('.preloader-wrapper')
-window.addEventListener('load', function(){
-    preloaderWrapper.classList.add('fade-out-animation');
-});
 
 //projects slider
 $(".carousel").owlCarousel({
