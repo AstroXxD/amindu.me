@@ -1,3 +1,3 @@
 # amindusangeeth.com
 
-Website is still Developing!....................
+Personal Website
