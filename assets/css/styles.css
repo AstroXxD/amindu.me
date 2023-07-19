@@ -15,6 +15,22 @@ body {
     color: white !important;
 }
 
+/* ___________________________Scroll Animations___________________________ */
+
+.hidden {
+    opacity: 0;
+    /* filter: blur(5px);
+    transform: translateY(-100%); */
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    /* filter: blur(0);
+    transform: translateZ(0); */
+}
+
+
 /*_______________________ Preloader_______________________ */
 
 .preloader-wrapper {
@@ -208,13 +224,13 @@ body {
 }
 
 .skill-bar {
-    height: 14px;
+    height: 13px;
     background-color: #555555;
     border-radius: 5px;
 }
 
 .skill-per {
-    height: 14px;
+    height: 13px;
     background: linear-gradient(90deg, #78d4ff, #00aeff);
     border-radius: 5px;
     position: relative;
@@ -436,7 +452,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 /* .contact h1 {
@@ -473,6 +489,11 @@ body {
     padding-bottom: 50px;
 }
 
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
 .social-media {
     text-align: center;
 }
@@ -484,7 +505,7 @@ body {
 
 .social-media i {
     font-size: 28px;
-    padding: 20px 10px;
+    padding: 20px 10px 0;
 }
 
 .contact-ions a {
@@ -506,7 +527,6 @@ footer {
     height: 80px;
     background-color: #222222;
 }
-
 
 .footer p {
     text-align: center;

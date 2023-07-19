@@ -1,0 +1,162 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: url(../img/heroer.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.herotext {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.herotext h1 {
+    font-size: 100px;
+    margin-top: -80px;
+}
+
+.herotext h3 {
+    font-size: 50px;
+    margin-top: -80px;
+}
+
+.herobtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.herobtn i {
+    padding: 20px 5px 10px;
+}
+
+.herobtn p {
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.herobtn .conbtn {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.herobtn .discordbtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.discordbtn, .conbtn {
+    background-color: rgb(156, 0, 204);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.herobtn a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .herotext h1 {
+        font-size: 80px;
+    }
+    
+    .herotext h3 {
+        font-size: 40px;
+    }
+
+    .discordbtn, .conbtn {
+        font-size: 12px;
+    }
+
+    .herobtn i {
+        padding: 15px 5px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .herotext h1 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+    
+    .herotext h3 {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+
+    .discordbtn, .conbtn {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .herobtn i {
+        padding: 12px 5px 10px;
+    }
+
+    .herobtn .conbtn {
+        margin-left: 20px;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    .herotext h1 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    
+    .herotext h3 {
+        font-size: 20px;
+        margin-top: -30px;
+    }
+
+    .discordbtn, .conbtn {
+        font-size: 9px;
+        padding: 0 5px;
+    }
+
+    .herobtn i {
+        padding: 11px 5px 10px;
+    }
+
+    .herobtn p {
+        padding-right: 5px;
+    }
+
+    .herobtn .conbtn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .herobtn {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
