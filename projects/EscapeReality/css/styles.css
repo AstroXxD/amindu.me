@@ -39,6 +39,38 @@ body {
     visibility: hidden;
 }
 
+/* Header section */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, rgb(212, 0, 255),rgb(127, 0, 201));
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: black;
+    background: white;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
+
 /* Hero section */
 
 .hero {
