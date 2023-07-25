@@ -273,6 +273,36 @@ body {
     }
 }
 
+/* CV DOWNLOAD */
+
+.cvbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.cvbtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    background: linear-gradient(90deg, #27a8ff, #006eff);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cvbtn a:hover {
+    color: black;
+    background: white;
+}
+
+@media (max-width: 500px) {
+    .cvbtn a {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
 /*_______________________ Projects Section_______________________ */
 
 #projects {
