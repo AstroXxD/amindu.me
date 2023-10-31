@@ -39,7 +39,7 @@ window.onscroll = () => {
 
 // Hero text
 var typed = new Typed('.multitext', {
-strings: ['Front-End Developer', 'FiveM Developer', 'Web Designer', 'Graphic Designer'],
+strings: ['Web Developer', 'FiveM Developer', 'Web Designer', 'Graphic Designer'],
 loop: true,
 typeSpeed: 100,
 backSpeed: 80,
