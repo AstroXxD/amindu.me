@@ -1,3 +1,3 @@
-# amindusangeeth.com
+# amindu.me
 
 Personal Website
