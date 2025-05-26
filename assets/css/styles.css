@@ -131,6 +131,15 @@ body {
     justify-content: center;
 }
 
+@media (max-width: 500px) {
+    .herotext {
+        background: url(../images/heroimgm.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+    
+
 .herotext h1 {
     font-size: 70px;
     font-weight: 650;
