@@ -124,3 +124,15 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+//age
+
+const birthDate = new Date('1999-08-24');
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const hasBirthdayPassed = (today.getMonth() > birthDate.getMonth()) || 
+                             (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+  if (!hasBirthdayPassed) {
+    age--;
+  }
+  document.getElementById('age').textContent = age;
